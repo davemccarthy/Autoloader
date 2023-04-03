@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UITableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="UIOperatorCell" customModule="Autoload" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="UIOperatorCell" customModule="Autoload" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll9-Kt-8gB">
+                        <rect key="frame" x="20" y="55" width="136" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="136" id="RNt-Ne-tFS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="mobile" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3o-wU-p8B">
+                        <rect key="frame" x="158" y="52" width="129" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="eA8-zk-OVi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TW-Cw-qTh">
+                        <rect key="frame" x="75" y="25.5" width="197" height="29"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" text="Centre" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMo-7W-RHQ">
+                        <rect key="frame" x="198" y="0.0" width="129" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="qS2-Yv-cPF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dialcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFe-4P-ROE">
+                        <rect key="frame" x="20" y="0.0" width="67" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LFe-4P-ROE" firstAttribute="leading" secondItem="ll9-Kt-8gB" secondAttribute="leading" id="37D-CF-0eU"/>
+                    <constraint firstItem="7TW-Cw-qTh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="55" id="7ei-3d-hoL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K3o-wU-p8B" secondAttribute="trailing" constant="28" id="7ug-cs-UfD"/>
+                    <constraint firstItem="ll9-Kt-8gB" firstAttribute="top" secondItem="7TW-Cw-qTh" secondAttribute="bottom" constant="0.5" id="7zI-iQ-CtB"/>
+                    <constraint firstItem="LFe-4P-ROE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8ob-Ew-04M"/>
+                    <constraint firstItem="7TW-Cw-qTh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HIh-n5-gbg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fMo-7W-RHQ" secondAttribute="trailing" constant="-44" id="Ini-a3-ejm"/>
+                    <constraint firstItem="fMo-7W-RHQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="20" id="bke-gv-enP"/>
+                    <constraint firstItem="LFe-4P-ROE" firstAttribute="baseline" secondItem="fMo-7W-RHQ" secondAttribute="baseline" id="lHm-je-6oN"/>
+                    <constraint firstItem="LFe-4P-ROE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mbz-3v-l2D"/>
+                    <constraint firstItem="K3o-wU-p8B" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="weC-Ao-e00"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7TW-Cw-qTh" secondAttribute="trailing" constant="11" id="xbS-fl-jlw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="centreLable" destination="fMo-7W-RHQ" id="BU7-KN-rVQ"/>
+                <outlet property="dialcodeLabel" destination="LFe-4P-ROE" id="WfB-M9-wk0"/>
+                <outlet property="emailLabel" destination="ll9-Kt-8gB" id="h2j-5n-mKy"/>
+                <outlet property="mobileLabel" destination="K3o-wU-p8B" id="fCB-n8-hzd"/>
+                <outlet property="nameLabel" destination="7TW-Cw-qTh" id="RfI-Zh-PTQ"/>
+            </connections>
+            <point key="canvasLocation" x="157.24637681159422" y="207.58928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
