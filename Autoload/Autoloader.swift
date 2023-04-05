@@ -54,7 +54,7 @@ class Autoload {
     }
     
     //  Select database rows
-    func select(columns:String, offset:Int = 0, filter:String = "", groupby:String="", orderby:String = ""){
+    func select(columns:String, offset:Int = 0, filter:String = "", groupby:String="", orderby:String = "", completion:@escaping (TableData) -> ()){
         
         let params:[String : Any] = [
             "database" : "\(database)",
@@ -72,7 +72,8 @@ class Autoload {
             
             let tableData: TableData = try! JSONDecoder().decode(TableData.self, from: jsonData)
         
-            self.delegate?.selected(data:tableData)
+            completion(tableData)
+            //self.delegate?.selected(data:tableData)
         }
     }
     
